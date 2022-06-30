@@ -1,15 +1,13 @@
-
+import Home from '../src/pages/Home.jsx'
+import Header from '../src/components/Header'
+import Footer from '../src/components/Footer'
 
 function App() {
   return (
     <div className="">
-      <header className="App-header">
-        <p>
-          feoffoefoeofoeoefeofoeofoefoeo
-        </p>dasdasdasdasdas
-        
-         
-      </header>
+      <Header/>
+      <Home/>
+      <Footer/>
     </div>
   );
 }
