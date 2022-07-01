@@ -1,4 +1,5 @@
 import React from "react";
+import Printers from '../components/printers'
 import "../assets/css/style.css";
 
 export default function Home() {
@@ -6,11 +7,7 @@ export default function Home() {
     <div className="home">
       Printer X
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Printers/>
     </div>
   );
 }

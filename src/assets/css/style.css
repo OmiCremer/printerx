@@ -1,5 +1,7 @@
 .home {
   box-sizing: border-box;
-  background-image: url("../image/recicling2.jpeg");
+  /* background-image: url("../image/recicling2.jpeg");
   background-repeat: repeat;
+  background-color: transparent; */
+  background-color: aquamarine;
 }

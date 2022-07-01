@@ -1,5 +1,5 @@
 import React from "react";
-import printerx from "../assets/image/printerxLogo.jpg";
+import printerx from "../assets/img/printerxLogo.jpg";
 
 export default function Header() {
   return (
