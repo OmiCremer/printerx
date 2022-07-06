@@ -2,8 +2,8 @@
 [
     {"id":1,
     "nombre": "impresora 1",
-    "img": "../assets/img/priterX.inside.png"
-  },
+    "img": "priterX.inside.png"
+  },  
     {"id":2,
     "nombre": "impresora 2",
     "img": "https://hkimg.bjyyb.net/sites/66500/66994/20220224155226708.webp"
@@ -14,11 +14,11 @@
   },
     {"id":4,
     "nombre": "impresora 4",
-    "img": "https://hkimg.bjyyb.net/sites/66500/66994/20220224155226708.webp"
+    "img": "https://i.ibb.co/TY7d2Qt/recicling2.jpg"
   },
     {"id":5,
     "nombre": "impresora 5",
-    "img": "https://hkimg.bjyyb.net/sites/66500/66994/20220224155226708.webp"
+    "img": "https://i.ibb.co/q0NdT0w/priter-X-inside.png"
 }
 ]
  

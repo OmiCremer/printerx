@@ -5,3 +5,11 @@
   background-color: transparent; */
   background-color: aquamarine;
 }
+.lista_productos{
+  display: flex;
+    flex-wrap: wrap;
+}
+
+.producto{
+  margin: 2%;
+}

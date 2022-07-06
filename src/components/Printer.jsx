@@ -7,8 +7,12 @@ export default function Printer(props) {
   const {id, nombre, img}= props
 
   return (
-    <div>
-      <Card style={{ width: '18rem' }}>
+    <div className="producto">
+      <Card   style={{ width: '18rem' }}>
+        
+          {/* // hacer un upload de imagen a algun servidor gratuito y consumir de ahi
+          // o hacer un api server con express problema con esto es que no se si los servicios de hosting soporta proxys internos */}
+
         <Card.Img variant="top" src={img} />
         <Card.Body>
             <Card.Title>{nombre}</Card.Title>
