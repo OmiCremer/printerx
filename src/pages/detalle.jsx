@@ -1,11 +1,31 @@
-import React from 'react'
-// import impresoras from '../data/impresoras.json'
+import React from 'react';
+import {useState, useEffect} from 'react'
+import {useParams} from 'react-router-dom'
+import {unaImpresora} from '../service/impresoraService'
+export default function Detalle() {
+  const {id} = useParams()
+  const [impresoraID, setImpresorasID] = useState()
 
-export default function detalle() {
+  useEffect(() => {
+    const oneImpresora = () => {
+      try {
+        const response = unaImpresora(id)
+        setImpresorasID(response)
+        console.log(response)
+        console.log(id)
+      }catch(error){
+        console.error(error)
+      }
+    }
+    oneImpresora()
+  },[id])
+
 
   return (
-    <div>
-      <p>osdfhdsfisadbfijsadbnfkjasdbnfkjsabdkfj;bsad;fbsdjbfklsdjbfkjlsabdklfsad</p>
+    <div className="producto">
+          <p>{impresoraID.nombre}</p>
+          <p>{impresoraID.id}</p>
+          <img src = {impresoraID.img} alt={impresoraID.nombre}/>
     </div>
   )
 }
