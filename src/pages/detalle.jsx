@@ -11,16 +11,12 @@ export default function Detalle() {
       try {
         const response = unaImpresora(id)
         setImpresorasID(response)
-        console.log(response)
-        console.log(id)
-        
       }catch(error){
         console.error(error)
       }
     }
     oneImpresora()
   },[id])
-  console.log(impresoraID)
 
   return (
     <div className="producto">

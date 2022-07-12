@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import Input from '../components/Input'
 import {Form, Button} from 'react-bootstrap'
+import consultas from '../data/consultas.json'
 
 export default function Consulta() {
     const [registro, setRegistro] = useState({nombre:'', direccion:'', mail:'', telefono:'', consulta:''})
@@ -10,11 +11,16 @@ export default function Consulta() {
         const name = event.target.name
         const value = event.target.value
         setRegistro({...registro, [name]:value})
-        console.log(registro)
     }
 
-    const guardarDatos = (event) => {
-        event.preventDefault()
+    const guardarDatos = (event) => {   
+        try{
+            event.preventDefault()
+           const reponse = consultas.push(registro)
+           console.log(reponse)
+        }catch(error) {
+            console.log(error)
+        }
     }
   return (
     <div>
@@ -23,7 +29,7 @@ export default function Consulta() {
         <Input type="text" name= 'direccion' placeholder="Direccion" change={datosRegistro}/>
         <Input type="mail" name= 'mail' placeholder="E-mail" change={datosRegistro}/>
         <Input type="text" name= 'telefono' placeholder="Telefono" change={datosRegistro}/>
-        <Input type="textarea" rows="10" cols='50' name= 'consulta' placeholder="Realice su consulta" change={datosRegistro}/>
+        <Input type="text" name= 'consulta' placeholder="Realice su consulta" change={datosRegistro}/>
         <br/>
         <Button type="submit">Enviar Consulta</Button>
       </Form>

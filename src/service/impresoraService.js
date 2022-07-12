@@ -1,14 +1,12 @@
 import impresoras from '../data/impresoras.json'
-
+// import consultas from '../data/consultas.json'
 
 export function unaImpresora(id){
     const impresora = impresoras.find(item => item.id === id)
-    // const procucto =
-    console.log(impresora)
     return impresora
 }
 
-export function unaConsulta(){
-    const impresora = impresoras.push()
-    console.log(impresora)
-}
+// export function unaConsulta(){
+//     const consulta = consultas.push({})
+//     console.log(consulta)
+// }
