@@ -4,7 +4,7 @@ import {useParams} from 'react-router-dom'
 import {unaImpresora} from '../service/impresoraService'
 export default function Detalle() {
   const {id} = useParams()
-  const [impresoraID, setImpresorasID] = useState()
+  const [impresoraID, setImpresorasID] = useState({})
 
   useEffect(() => {
     const oneImpresora = () => {
@@ -13,13 +13,14 @@ export default function Detalle() {
         setImpresorasID(response)
         console.log(response)
         console.log(id)
+        
       }catch(error){
         console.error(error)
       }
     }
     oneImpresora()
   },[id])
-
+  console.log(impresoraID)
 
   return (
     <div className="producto">
