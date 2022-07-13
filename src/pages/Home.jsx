@@ -1,5 +1,5 @@
 import React from "react";
-import Printers from '../components/printers'
+import Printers from '../components/Printers'
 
 
 export default function Home() {

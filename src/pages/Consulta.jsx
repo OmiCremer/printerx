@@ -2,26 +2,31 @@ import React from 'react'
 import {useState} from 'react'
 import Input from '../components/Input'
 import {Form, Button} from 'react-bootstrap'
-import consultas from '../data/consultas.json'
+// import consultas from '../data/consultas.json'
 
 export default function Consulta() {
+
     const [registro, setRegistro] = useState({nombre:'', direccion:'', mail:'', telefono:'', consulta:''})
+
+    const base = []
 
     const datosRegistro = (event) => {
         const name = event.target.name
         const value = event.target.value
         setRegistro({...registro, [name]:value})
+        console.log(registro)
     }
 
     const guardarDatos = (event) => {   
-        try{
-            event.preventDefault()
-           const reponse = consultas.push(registro)
-           console.log(reponse)
-        }catch(error) {
-            console.log(error)
-        }
+      try{
+        event.preventDefault()
+        const data = base.push({...registro})
+        console.log('base', base)
+        console.log(data, 'data')
+    }catch(error) {
+        console.log(error)
     }
+  }
   return (
     <div>
       <Form onSubmit={guardarDatos}>
@@ -35,4 +40,4 @@ export default function Consulta() {
       </Form>
     </div>
   )
-}
+    }

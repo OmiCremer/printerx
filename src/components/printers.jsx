@@ -1,8 +1,8 @@
 import React from 'react'
-import Printer from '../components/Printer'
+import Printer from './Printer'
 import impresoras from '../data/impresoras'
 
-export default function printers() {
+export default function Printers() {
 
 
   return (
