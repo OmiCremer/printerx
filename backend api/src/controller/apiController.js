@@ -17,11 +17,11 @@ const apiController = {
     unaImpresora: (req, res) =>{
         const id = req.params.id
         const data = impresoras.find((impresoras) => impresoras.id == id)
-        console.log(data)
         return res.json(data) 
     },
 
     consultas1: (req, res) =>{
+        console.log(consultas)
         return res.json(consultas)
     },
 
