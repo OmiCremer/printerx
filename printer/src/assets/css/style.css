@@ -1,0 +1,21 @@
+.home {
+  box-sizing: border-box;
+  /* background-image: url("../img/recycling.webp");
+  background-repeat: repeat;
+  background-color: transparent; */
+  background-color: aquamarine;
+}
+.lista_productos{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.producto{
+  margin: 2%;
+}
+
+.img{
+  margin-left:28%;
+  width: 40%;
+  
+}
