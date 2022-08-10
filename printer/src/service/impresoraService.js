@@ -2,6 +2,7 @@
 export async function listaImpresoras (){
     const data = await fetch('/api/impresoras')
     const response = data.json()
+    console.log(response)
     return response
 }
 

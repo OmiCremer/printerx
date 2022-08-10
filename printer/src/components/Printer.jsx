@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 export default function Printer(props) {
 
-  const {id, nombre, img}= props
+  const {id, nombre, img, categoria}= props
 
   return (
     <div className="producto">
@@ -53,6 +53,9 @@ export default function Printer(props) {
             <Card.Title>{nombre}</Card.Title>
             <Card.Text>
             numero de id: {id}
+            </Card.Text>
+            <Card.Text>
+            categoria: {categoria}
             </Card.Text>
             <Button as = {Link} to = {'/detalle/' + id} variant="primary">Detalle</Button>
         </Card.Body>

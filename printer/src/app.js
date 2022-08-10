@@ -4,13 +4,16 @@ import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 import {BrowserRouter as Router} from 'react-router-dom'
 import "./assets/css/style.css";
+import Context from './context/ContextGeneral'
 
 function App() {
   return (
     <div className="">
       <Router>
-      <Header />
-      <PublicRouter/>
+        <Context>
+          <Header />
+          <PublicRouter/>
+        </Context>
       <Footer />
       </Router>
     </div>
