@@ -1,30 +1,36 @@
-
 [
-  {"id":"1",
-  "nombre": "impresora 1",
-  "img": "https://i.ibb.co/q0NdT0w/priter-X-inside.png",
-  "categoria":"sublimacion"
-  },  
-  
-  {"id":"2",
-  "nombre": "impresora 2",
-  "img": "https://hkimg.bjyyb.net/sites/66500/66994/20220224155226708.webp"
+  {
+    "id": "1",
+    "nombre": "impresora 1",
+    "img": "https://i.ibb.co/q0NdT0w/priter-X-inside.png",
+    "categoria": "sublimacion"
   },
 
-  {"id":"3",
-  "nombre": "impresora 3",
-  "img": "https://hkimg.bjyyb.net/sites/66500/66994/20220224155226708.webp"
+  {
+    "id": "2",
+    "nombre": "FD5198-ESPrinter",
+    "img": "https://i.ibb.co/TRsWLnP/FD5198-ESPrinter.png",
+    "categoria": "sublimacion"
   },
 
-  {"id":"4",
-  "nombre": "impresora 4",
-  "img": "https://i.ibb.co/TY7d2Qt/recicling2.jpg",
-  "categoria":"equiposUV"
+  {
+    "id": "3",
+    "nombre": "D5194-ESPrinter",
+    "img": "https://i.ibb.co/3CXbvps/FD5194-ESPrinter.png",
+    "categoria": "sublimacion"
   },
-  
-  {"id":"5",
-  "nombre": "impresora 5",
-  "img": "https://i.ibb.co/q0NdT0w/priter-X-inside.png",
-  "categoria":"calandras"
-}
+
+  {
+    "id": "4",
+    "nombre": "FD5193-ESPrinter",
+    "img": "https://i.ibb.co/LhgS3x8/FD5193-ESPrinter.png",
+    "categoria": "sublimacion"
+  },
+
+  {
+    "id": "5",
+    "nombre": "impresora 5",
+    "img": "https://i.ibb.co/q0NdT0w/priter-X-inside.png",
+    "categoria": "calandras"
+  }
 ]
